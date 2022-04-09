@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto+Condensed&display=swap');
+
+body{
+font-family: 'Roboto Condensed', sans-serif;
+background-color: #D6ECF3;
+text-align: center;
+font-size: 90%;
+}
+
+h2{
+    font-size: 200%;
+}
+h3{
+    font-size: 170%;
+    padding:0px;
+    margin:0px;
+}
+h4{
+    font-size: 150%;
+}
+h5{
+    font-size: 120%;
+}
+ul{
+    padding:0vw;
+    margin:0vw;
+}
+
+#infographic{
+    width: 60vw;
+    height: 2000vh;
+    position: absolute;
+    top:1vh;
+    left: 20vw;
+    background-color: #FFFFFF;
+    justify-self: center;
+    padding: 2vw;
+    margin-bottom: 10vh;
+
+}
+
+#emotions{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.emo{
+text-align: center;
+padding: 5px;
+}
+
+.emoji{
+    width: 100%;
+    height: auto;
+}
+
+.selectedEmotion{
+    background-color: rgb(201,234,219);
+}
+
+.emo:hover{
+    background-color: rgb(201,218,214);
+}
+
+.sadhuman{
+    height: 150px;
+    width: auto;
+}
+.sadhuman2{
+    height: 150px;
+    width: auto;
+    transition: transform 2s linear 0s;
+    z-index: 2;
+}
+
+.sadhuman:hover{
+    animation: breakDown 5s linear 0s;
+}
+
+@keyframes breakDown{
+    to{
+        transform: rotate(-45deg) translate(-40px, -10px);
+        
+    }
+}
+.human{
+    height: 200px;
+    width: auto;
+}
+.human2{
+    height: 200px;
+    width: auto;
+}
+
+.human:hover{
+animation: walkAway 5s linear 0s;
+}
+
+@keyframes walkAway{
+    to{
+        transform: translate(-100vw, 0px);
+        filter: brightness(0.25);
+    }
+}
+
+#section1{
+    height: 65vh;
+}
+
+
+
+.section{
+padding-bottom: 500px;
+padding: 10px;
+background-color: #F1E3DC;
+border: 5px solid #F3AAA9;
+margin-bottom: 100px;
+}
+
+.section:nth-child(even){
+    background-color: #F7E9D3;
+    border: 5px solid #FABAA1;
+
+}
+
+.quote{
+    font-family: 'Parisienne', cursive;
+    font-size: 250%;
+    padding:0px;
+    margin:0px;
+    /*text-align: center;*/
+}
+
+.oneSeven{
+    color: #7FA6AD;
+}
+
+.sevenOne{
+    color: #949690;
+}
+
+.bc1{
+    color: #7FA6AD;
+}
+
+.bc2{
+    color: #70878E;
+}
+
+#section4{
+    text-align: left;
+}
+
+.headers{
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #FBBBA4;
+    padding: 1vw;
+  } 
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255);
+    padding: 2vw;
+    font-size: 130%;
+    text-align: center;
+  }
+
+  .sBubble1{
+      background-image: url("ID_Assg1_Creative/sBub1.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 100px;
+      width: 100%;
+      font-size: 2vw;
+      text-align: left;
+      padding-top: 3vh;
+      padding-left: 4vw;
+  }
+
+  .sBubble2{
+    background-image: url("ID_Assg1_Creative/sBub2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100px;
+    width: 52vw;
+
+    text-align: right;
+    font-size: 2vw;
+    padding-top: 3vw;
+    padding-right: 4vw;
+
+  }
+
+  .sBubbleBig1{
+    background-image: url("ID_Assg1_Creative/speechbubble1big.png");
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    max-height: 90vh;
+    width: 100%;
+    background-size: contain;
+    font-size: 1.3vw;
+    text-align: left;
+    padding-top: 4vh;
+    padding-left: 6vw;
+    /*line-height: 1px;*/
+
+  }
+
+  .sBubbleM1{
+    background-image: url("ID_Assg1_Creative/speechbubble1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30vh;
+    width: 60vw;
+    font-size: 1.6vw;
+    text-align: left;
+    padding-top: 2vh;
+    padding-left: 6vw;
+  }
+
+  .sBubbleM2{
+    background-image: url("ID_Assg1_Creative/speechbubble2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25vh;
+    width: 55vw;
+    padding-top: 2vh;
+    font-size: 1.7vw;
+    text-align: right;
+    padding-right: 4vw;
+
+  }
+
+
+
+  .selectedSymptom{
+    background-color: rgb(255,255,255);
+  }
+  
+  .nSelected:hover{
+      background-color: rgb(255,255,255) ;
+  }
+
+  #diagnose{
+      margin: 1vw;
+      width: 20vw;
+      height: 7vh;
+      margin-bottom: 8vh;
+  }
+
+  .moodLabel{
+      color: #999999;
+  }
+
+
+
+  .sadhuman2:hover{
+      transform: scale(3,3) translate(13vw, 13vh);
+  }
+
+  #popInfo {
+      z-index: -1;
+      font-size: 1vw;
+
+  }
+  
+  #anyone{
+      height: 900px;
+  }
+
+  #hoverSad{
+      position: relative;
+      top: 170px;
+  }
+  #donutChart1{
+    height: 500px;
+}
+
+  #donutChart2{
+      height: 500px;
+  }
+
+  #stigmaText{
+      text-align: left;
+      padding-top: 10px;
+  }
+
+  .overText{
+    padding-top: 10px;
+  }
+
+  .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1vw;
+  }
+
+  #recover{
+      background-color: #D7E5E3;
+      text-align: left;
+      padding: 2vw;
+  }
+
+  #helpOthers{
+      background-color: #E0C9C3;
+      text-align: left;
+      padding: 2vw;
+  }
+
+  #getHelp{
+      background-color: #7FA6AD;
+      color: white;
+      padding: 10px;
+      margin-top: 1vw;
+  }
+
+  #ways{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1vw;
+  }
+
+  .way{
+      background-color: rgba(112,135,141,0.7);
+  }
+
+  .wayIcon{
+      width: 10vw;
+  }
+
+  #connect{
+      background-image: url("ID_Assg1_Creative/mountain.jpg");
+      z-index: -1;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      height: 70vh;
+      line-height: 4vh;
+      color: white;
+  }
+
+  #connect h1{
+      font-size: 3vw;
+  }
+  #connect h2{
+      font-size: 2vw;
+  }
+
+
+
+  .mists-container{
+      position: relative;
+      align-self: center;
+      margin-top:-70vh;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      z-index: 0;
+  }
+
+  .mist-img{
+      position: absolute;
+      height: 100vh;
+      width: 300vw;
+      z-index: 1;
+  }
+
+  .mist-img-first{
+      background: url("ID_Assg1_Creative/fog-1.png");
+      background-repeat: repeat-x;
+
+      background-size: contain;
+
+      background-position: center;
+      animation: misty 60s linear infinite;
+  }
+
+  .mist-img-second{
+    background: url("ID_Assg1_Creative/fog-1.png");
+    background-repeat: repeat-x;
+
+    background-size: contain;
+
+    background-position: center;
+    animation: misty 60s linear infinite;
+}
+
+  @keyframes misty {
+      0%{
+          transform: translate3d(0,0,0);
+      }
+      100%{
+          transform: translate3d(-200vw,0,0);
+      }
+  }
+
+  #optimist{
+    position: relative;
+    background-color: rgba(0,0,0,0.6);
+    bottom: 2vh;
+    color: white;
+    height: 10vh;
+    width: 20vw;
+    text-decoration: none;
+    border: 1px solid white;
+    z-index: 2;
+    margin-top: 2vh;
+    font-size: 2vw;
+  }
+
+  #barChart3{
+      height: 500px;
+  }
+
+  #diagList {
+      font-size: 1.5vw;
+      width:100%;
+      padding: 10px;
+  }
+
+  th, tr, td{
+      border: 2px solid #F3AAA9;
+  }
+
+  #section5 {
+      margin-bottom: 1000px;
+  }
